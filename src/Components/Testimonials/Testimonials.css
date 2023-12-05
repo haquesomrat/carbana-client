@@ -1,0 +1,10 @@
+.swiper-slide-active .card {
+  border: 1px solid #ff4605;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ff4605;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ff4605;
+}
