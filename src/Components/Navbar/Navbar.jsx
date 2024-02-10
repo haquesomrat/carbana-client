@@ -4,6 +4,7 @@ import profilePic from "../../assets/user.png";
 import "./Navbar.css";
 import { AuthContext } from "../../Context/AuthProvider";
 import toast from "react-hot-toast";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -62,7 +63,7 @@ const Navbar = () => {
     ) {
       document.getElementById("navbar").style.padding = "0px 0px";
     } else {
-      document.getElementById("navbar").style.padding = "12px 0px";
+      document.getElementById("navbar").style.padding = "7px 0px";
     }
   }
 
@@ -87,22 +88,9 @@ const Navbar = () => {
               <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-ghost lg:hidden"
+                className="btn btn-ghost lg:hidden hover:bg-primary/10 hover:border  group px-3"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-primary"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
+                <RxHamburgerMenu className=" text-primary" size={18} />
               </div>
               <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 {links}
@@ -110,7 +98,7 @@ const Navbar = () => {
             </div>
             <Link
               to={"/"}
-              className="btn btn-ghost text-2xl md:text-3xl xl:text-4xl font-bold text-primary hover:bg-transparent"
+              className="btn btn-ghost px-2 text-2xl md:text-3xl font-bold text-primary hover:bg-transparent"
             >
               Carbana
             </Link>

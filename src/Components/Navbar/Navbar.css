@@ -1,9 +1,14 @@
 .navbar .menu li a.active {
   background-color: transparent !important;
-  font-size: 1.125rem;
   font-weight: 500;
   color: #ff4605 !important;
   transition: all 0.5s;
+}
+.navbar .menu-horizontal li a.active {
+  transform: scale(1.1);
+}
+.navbar .dropdown-content li a.active {
+  font-size: 1.125rem;
 }
 .navbar-center .menu li:focus-visible {
   border: none !important;

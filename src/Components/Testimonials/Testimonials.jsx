@@ -51,11 +51,11 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="container mx-auto py-10 lg:mb-10 px-3">
+    <div className="container mx-auto my-10 lg:my-20 px-3">
       <span className="flex justify-center ">
         <TbCarSuv className="text-4xl text-primary" />
       </span>
-      <h2 className="text-3xl lg:text-5xl xl:text-6xl text-center font-semibold text-primary pt-4 pb-6">
+      <h2 className="text-3xl lg:text-4xl xl:text-[44px] text-center font-semibold text-primary pt-1 pb-10">
         Testimonials
       </h2>
       <div>
@@ -82,8 +82,8 @@ const Testimonials = () => {
           navigation={{ clickable: true }}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
+          // onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log("slide change")}
         >
           {reviews.map((review) => (
             <SwiperSlide key={review.name}>

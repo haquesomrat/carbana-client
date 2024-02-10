@@ -60,7 +60,7 @@ const UpdateProduct = () => {
 
     // send updated data to the server
 
-    fetch(`https://curious-goat-sweatpants.cyclic.app/cars/${_id}`, {
+    fetch(`https://carbana-server.vercel.app/cars/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

@@ -32,29 +32,29 @@ const Footer = () => {
             <a className="link link-hover">Cookie policy</a>
           </nav>
         </footer>
-        <footer className="footer py-6 border-t text-base-content border-base-300">
-          <aside className="items-center grid-col text-center">
+        <footer className="footer gap-6 py-6 border-t text-base-content border-primary/30">
+          <aside className="items-center grid-col text-center mx-auto md:mx-0">
             <Link
               to={"/"}
-              className="btn btn-ghost text-2xl md:text-3xl xl:text-4xl font-bold text-primary hover:bg-transparent p-0"
+              className="btn btn-ghost text-2xl mx-auto md:mx-0 md:text-3xl font-bold text-primary hover:bg-transparent p-0"
             >
               Carbana
             </Link>
             <p>Copyright © 2023 - All right reserved by Carbana Pvt. Ltd</p>
           </aside>
-          <nav className="md:place-self-center md:justify-self-end">
-            <div className="grid grid-flow-col gap-4">
+          <nav className="mx-auto md:mx-0 md:place-self-center md:justify-self-end">
+            <div className="flex gap-4">
               <a
                 href="#"
-                className="bg-primary p-2 rounded-full hover:bg-[#fd9651]"
+                className="bg-primary p-2 rounded-full hover:bg-transparent group border border-primary duration-500 ease-out"
               >
-                <FaFacebookF className="text-xl text-base-100 " />
+                <FaFacebookF className="text-xl text-base-100 group-hover:text-primary duration-500 ease-out" />
               </a>
-              <a className="bg-primary p-2 rounded-full hover:bg-[#fd9651]">
-                <FaInstagram className="text-xl text-base-100" />
+              <a className="bg-primary p-2 rounded-full hover:bg-transparent group border border-primary  duration-500 ease-out cursor-pointer">
+                <FaInstagram className="text-xl text-base-100 group-hover:text-primary  duration-500 ease-out" />
               </a>
-              <a className="bg-primary p-2 rounded-full hover:bg-[#fd9651]">
-                <FaXTwitter className="text-xl text-base-100" />
+              <a className="bg-primary p-2 rounded-full hover:bg-transparent group border border-primary  duration-500 ease-out cursor-pointer">
+                <FaXTwitter className="text-xl text-base-100 group-hover:text-primary  duration-500 ease-out" />
               </a>
             </div>
           </nav>

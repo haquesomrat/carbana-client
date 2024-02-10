@@ -7,7 +7,7 @@ const CartItem = ({ cartItem, cartItems, setCartItems }) => {
 
   const handleDeleteCartItem = (id) => {
     console.log(id);
-    fetch(`https://curious-goat-sweatpants.cyclic.app/userCart/${id}`, {
+    fetch(`https://carbana-server.vercel.app/userCart/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

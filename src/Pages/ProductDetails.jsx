@@ -48,7 +48,7 @@ const ProductDetails = () => {
     };
     // add item to the cart
     if (user) {
-      fetch(`https://curious-goat-sweatpants.cyclic.app/carts`, {
+      fetch(`https://carbana-server.vercel.app/carts`, {
         method: "POST",
         headers: {
           "content-type": "application/json",

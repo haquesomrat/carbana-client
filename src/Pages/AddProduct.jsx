@@ -37,7 +37,7 @@ const AddProduct = () => {
     console.log(newCar);
 
     // send data to the server
-    fetch("https://curious-goat-sweatpants.cyclic.app/cars", {
+    fetch("https://carbana-server.vercel.app/cars", {
       method: "POST",
       headers: {
         "content-type": "application/json",

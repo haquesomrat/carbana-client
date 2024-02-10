@@ -55,8 +55,8 @@ const Advertisement = () => {
         navigation={{ clickable: true }}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
       >
         {advertisements.map((advertisement) => (
           <SwiperSlide key={advertisement.name}>

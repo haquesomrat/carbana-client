@@ -21,7 +21,7 @@ const Router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("https://curious-goat-sweatpants.cyclic.app/cars"),
+        loader: () => fetch("https://carbana-server.vercel.app/cars"),
       },
       {
         path: "/register",
@@ -47,7 +47,7 @@ const Router = createBrowserRouter([
         path: "/updateproduct/:id",
         element: <UpdateProduct></UpdateProduct>,
         loader: ({ params }) =>
-          fetch(`https://curious-goat-sweatpants.cyclic.app/cars/${params.id}`),
+          fetch(`https://carbana-server.vercel.app/cars/${params.id}`),
       },
       {
         path: "/products",
@@ -56,7 +56,7 @@ const Router = createBrowserRouter([
             <Products></Products>
           </PrivateRouter>
         ),
-        loader: () => fetch("https://curious-goat-sweatpants.cyclic.app/cars"),
+        loader: () => fetch("https://carbana-server.vercel.app/cars"),
       },
       {
         path: "/products/:brandname",
@@ -67,7 +67,7 @@ const Router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://curious-goat-sweatpants.cyclic.app/newcars/${params.brandname}`
+            `https://carbana-server.vercel.app/newcars/${params.brandname}`
           ),
       },
       {
@@ -78,7 +78,7 @@ const Router = createBrowserRouter([
           </PrivateRouter>
         ),
         loader: ({ params }) =>
-          fetch(`https://curious-goat-sweatpants.cyclic.app/cars/${params.id}`),
+          fetch(`https://carbana-server.vercel.app/cars/${params.id}`),
       },
       {
         path: "/mycart/:email",
@@ -88,9 +88,7 @@ const Router = createBrowserRouter([
           </PrivateRouter>
         ),
         loader: ({ params }) =>
-          fetch(
-            `https://curious-goat-sweatpants.cyclic.app/userCart/${params.email}`
-          ),
+          fetch(`https://carbana-server.vercel.app/userCart/${params.email}`),
       },
     ],
   },

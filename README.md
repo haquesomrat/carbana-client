@@ -24,4 +24,4 @@
 ---
 
 - [Carbana Client Site](https://carbana-project.web.app/)
-- [Carbana Server Site](https://curious-goat-sweatpants.cyclic.app)
+- [Carbana Server Site](https://carbana-server.vercel.app)

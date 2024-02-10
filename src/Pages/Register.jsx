@@ -50,7 +50,7 @@ const Register = () => {
             createdAt: createdAt,
             lastLoggedInAt: lastLoggedInAt,
           };
-          fetch(`https://curious-goat-sweatpants.cyclic.app/users`, {
+          fetch(`https://carbana-server.vercel.app/users`, {
             method: "POST",
             headers: {
               "content-type": "application/json",
@@ -102,7 +102,7 @@ const Register = () => {
           createdAt,
           lastLoggedInAt,
         };
-        fetch(`https://curious-goat-sweatpants.cyclic.app/users`, {
+        fetch(`https://carbana-server.vercel.app/users`, {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -141,7 +141,7 @@ const Register = () => {
           createdAt,
           lastLoggedInAt,
         };
-        fetch(`https://curious-goat-sweatpants.cyclic.app/users`, {
+        fetch(`https://carbana-server.vercel.app/users`, {
           method: "POST",
           headers: {
             "content-type": "application/json",
